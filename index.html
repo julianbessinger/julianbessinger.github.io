@@ -1,51 +1,44 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Project: Blog</title>
-    </head>
-    <style>
-        body {
-            background-color:rgb(242, 239, 189);
-            font-size:25 px;
-        }
-        h1 {
-            font-family:sans-serif;
-            font-style:italic;
-            color:rgb(77, 43, 77);
-        }
-        h2 {
-            font-family:"helvetica", sans-serif;
-        }
-        h3 {
-            font-family:serif;
-            color:rgb(83, 94, 166);
-            font-weight:100 px;
-            
-        }
+<!-- This is based on DillingerLee's great template here:
+https://github.com/Team-Code/KA_Offline -->
+<html> 
+ <head>
+    <title>Processing.JS inside Webpages: Template</title> 
+</head>
+ <body>
+    <p align="center"> 
+	<!--This draws the Canvas on the webpage -->
+      <canvas id="mycanvas"></canvas> 
+    </p>
+ </body>
+ 
+ <!-- Run all the JavaScript stuff -->
+ <!-- Include the processing.js library -->
+ <!-- See https://khanacademy.zendesk.com/hc/en-us/articles/202260404-What-parts-of-ProcessingJS-does-Khan-Academy-support- for differences -->
+ <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script> 
+ 
+ <script>
+    var sketchProc = function(processingInstance) {
+     with (processingInstance) {
+        size(400, 400); 
+        frameRate(30);
         
-        
-        
-    </style>
-    <body>
-        
-        <h1>Julian's blog</h1>
+        // ProgramCodeGoesHere
+        fill(255, 255, 0);
+        ellipse(200, 200, 200, 200);
+        noFill();
+        stroke(0, 0, 0);
+        strokeWeight(2);
+        arc(200, 200, 150, 100, 0, PI);
+        fill(0, 0, 0);
+        ellipse(250, 200, 10, 10);
+        ellipse(153, 200, 10, 10);
+    }};
 
-        <h3>Contents</h3>
-        <ul>
-            <li><a href="#first_post">First post!</a></li>
-            <li><a href="#second_post">Second post!</a></li>
-        </ul>
-        
-        <h2 id="first_post">First post</h2>
-        <h6>Posted on 11/20/2019</h6>
-        
-        <p>I'm working on HTML and CSS coding.</p>
-        <h2 id="second_post">Second Post</h2>
-        <h6>Posted on 11/20/2019</h6>
-        
-        <p>I'm excited to combine it with JavaScript</p>
-        
-        
-    </body>
+    // Get the canvas that Processing-js will use
+    var canvas = document.getElementById("mycanvas"); 
+    // Pass the function sketchProc (defined in myCode.js) to Processing's constructor.
+    var processingInstance = new Processing(canvas, sketchProc); 
+ </script>
+
 </html>
