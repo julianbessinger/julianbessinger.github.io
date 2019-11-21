@@ -16,6 +16,241 @@ https://github.com/Team-Code/KA_Offline -->
  <!-- Include the processing.js library -->
  <!-- See https://khanacademy.zendesk.com/hc/en-us/articles/202260404-What-parts-of-ProcessingJS-does-Khan-Academy-support- for differences -->
  <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script> 
+//canvasSize should be adjusted to the value that is equal to the width and height of the canvas in pixels. It will then cause the other elements in the program to scale.
+var canvasSize = 400;
+
+//These variables contain the text for each button press
+var maxOne = "Max starts the story out by coming very close to overdosing. He has taken too much of an upper and the world is seeming hyper real and fucked up to him. He gets a message that Trip is coming back and it doesn’t register at all, but the reader gets a little bit of context for the next scene. I’m going to try to remember to show and not tell so that they don’t get beaten over the head with exposition, but they understand that Trip is Max’s best friend and everything.He and Cheryl are friends to a greater degree than I have yet shown in the book. They hang out from time to time in groups, and they always have bons mots for each other. Trip’s introduction to Cheryl is much less labored than it is in the original draft because Max and Cheryl are actually close. I’ll have to put the energy into having their interactions sparkle a little bit. ";
+var maxTwo = "Acid has all of these properties that make it ideal from a storytelling perspective. It will be good to punctuate Max’s addiction with something that has been known to help people escape addiction. When I include the poison ivy later in the story it will be the physical manifestation of his inner agony. The choice of acid instead of speed is the most important choice he makes in the entire book until he decides not to return to his family. It starts him on a detoxing path that is narrratively compounded by the posion ivy thing. However, by the end of “the first few” he’s clean, and he’s ready for “the best times.” Max’s acid thesis is that he needs to quit doing speed or he’s going to die. He’ll have a chance to refuse cocaine later in the adventure";
+var maxThree = "Although it starts earlier, Max’s worst period of withdrawal is during this month. He’s the crabbiest he ever gets during the story, and, as a consequence of all of this, narratively speaking, he gets a vicious case of poison ivy. Of course, in the world of the story it’s just more bad luck, but it provides a visual representation of the journey he’s going on. The poison ivy creates a rash that is super brutal at first, and he itches it even when he knows that he shouldn’t. Later on, in a vulnerable moment, he notices the pink, aggravated skin that is still healing on his leg. It is almost healthy, but there is a bit of a scar too. A reminder of what he’s going to be dealing with for the rest of his life, and how he can no longer afford to make mistakes. ";
+var maxFour = "This is where Max is happiest, though not closest to the truth. He lets himself live in the moment more than he ever has before because, for the first time, his family isn’t right behind him at every turn. He starts to even enjoy something that he’s ostensibly doing to support himself, and that’s new too. The WWOOFING isn’t even the only positive thing, there’s Shawn too. Weirdly, even though he has been more free, he has been expressing himself sexually way less than he has at any other time since puberty. He doesn’t feel the need to because other parts of his identity are there. But Shawn, Shawn is different. He doesn’t hook up with him out of convenience and excitement. His better judgement is telling him to not do it, but it’s something that he actually wants, and that makes it a different situation. He's of these people that has an ego that is looking for pain. It actually wants to get hurt, crazy as it is. It needs stimulation, etc. However, when there is an actual chance at happiness, the ego does a strange thing and it tries to recreate that old pattern of making issues where there don’t have to be any. This is absolutely one of those situations. If Max was in a healthy place he would understand that there was nothing too strange about having a hookup with a single guy who was being completely open and fair about it. The only thing that made it difficult was Max’s own issues and how slowly he had to approach the situation. He slowed everything down, and consequently, he was also the one who will be thinking about it for the rest of the story. Shawn might like Max just as much as the other way around, but he’s got a fuller life. Even with Max’s youth and his friends he has less to think about, less to do, less to make him feel like a person. That’s why he needs to do what he does at the end and becomes somebody who has other drives and reasons to live. He decides to farm and to fill his life with meaning, one way or the other. He realizes that, even if he tried, there would be nothing to salvage from his old life. ";
+var maxFive = "Max accompanies Trip into Florida to meet up with Jean. Through some weird Rhode Island mutual acquaintance, Susan is in Florida as well. The four of them are at some party together and Trip has a relatively mature conversation with her. She’s been hurting, but she is living her life too. Her work, which is in some environemtnally taxing field, has been her main focus all along, and now she’s been able to have some no-strings-attached fun in addition to her job. That’s the sort of thing that will give her a chance at something reasonably close to happiness, even if the real thing is out of reach.  Max’s whole world view is in a state of collapse. He knows that he has to stay with Trip, and comfort him, but he has no idea what’s coming after. His own death appears to him like a spectre, and he knows that returning to Rhode Island means a return to his speed addiction and the eventual death that is guaranteed to accompany it. This realization puts him in a suggestible frame of mind. He doesn’t know what the answer is, and he doesn’t know how his life is going to change, but he’s experiencing all of the discomfort of a massive change because he knows that either there has to be one, or he has to accept that he’s on the way towards death.";
+var maxSix = "After they survive, they walk hundreds of miles. It takes them days and days. They use umbrellas to block out the sun, and old car maps to find their way towards Zez’s house. At some safe haven Trip calls his family to report on what happened to Jean. Max is cleansed, born anew, and traumatized. In a way, his feelings are a lot like they were before the flood, but this time there is less fear. He knows that things are changed for good, he just doesn’t understand exactly how yet. They decide to stay with Zez and be a little found family together. That was the point all along. Each of their individual stories was leading them to leave their life at home and choose a different kind of family as a replacement for what they’re leaving behind. ";
+//line 2
+
+var tripOne = "I have to make a decision about the prologue, and I think that I have. It’s going to be a glimpse of all of the destruction of the flood. I don’t know how to draw it exactly yet, but it has to be something that accurately frames that disaster that still leaves a question as to whether they survive, and what happens afterwards. Max and Trip are both there, so it raises the question of where Cheryl is. I’d be worried about her getting short shrift, but it’s good simply because it leaves a question open in the first act. It almost seems like Cheryl is gearing up to reject Trip and send him on this pity party road adventure, so when she agrees to go it feels like the story is going in a new direction.Trip comes back from Japan and meets his old friend Max without knowing how messed up Max’s life has become. He doesn’t know about the overdose scene, but maybe he makes a comment about how both of them are starting to look old. Max offers him a job at the Sylvan, and Trip feels compelled to take it. He has no way of making money, and a little independance would go a long way with him. This is the only time jump in the story. Months go by, and Trip and Cheryl becomes friends as well as coworkers. Max’s momentum, which was interrupted by Trip’s return, as well as the fear that came over him after the overdose, starts to pick up again. After several months of sobriety from uppers he gets really high again one night. Trip sees him and it makes him uncomfortable, but he doesn’t know the extent of Max’s addiction. Trip talks about getting away for a long road trip. Max insists that it be called a road adventure and he latches onto the idea. If he can get away from his addiction for awhile and not think about it than maybe his life won’t be as short as it feels like it’s going to be. Cheryl seems interested too.With Cheryl onboard for the adventure they finally start to get things together. Max gets high one more time and sleeps outside so that he isn’t detected. (Now I’m wondering if Trip and Max should even live together. It adds to Trip’s arc if he lives with his parents the whole time, and it would protect Max’s privacy in his addiction. They’ll still have lots of organic interactions at work, so now that Max is my perspective character maybe I’ll have them live seperately.) They get everything ready and kinda go while only being half prepared. The adventure begins. ";
+var tripTwo = "They get to New York, and, of course, a lot of things change. For one, they’ve left their home and are officially not there anymore. Max is fiending for some speed, but he knows that he shouldn’t. His dealer has given him a connect there. All that this means for Trip is that, late at night, when they’re drunk, Max is gonna contact his dealer, and that guy is going to offer them a bunch of different drugs. They end up going with acid, and that becomes an important part of this adventure. Acid is a challenge to write about. I’ll refresh my memory with all of the journal entries that I’ve written about it as well as all of stuff that I can find on Reddit to remind me of parts that will read well. The visual stuff everybody will be expecting, but my whole thing about acid is that it does the same thing to your thoughts that it does to your vision. It twists them around and warps them into new shapes. For Trip, it’s a joy. He’s in a pretty bad place in Rhode Island, but being free of that, being back in a big city, which is what he felt like he was meant to do, allowed him to cut loose. —The other thing about acid is that the thing that really matters is the thesis you bring into your trip. For Max, it’s that he needs to quit drugs. For Trip, it’s that he needs to cut loose and be bold/free. For Cheryl, it’s that she needs to live in the present moment. ";
+var tripThree = " Trip is kind of a lazy guy by nature. The world has thrown a lot of opportunities at him and he’s used to the idea that, as long as he doesn’t actively fuck things up, which he won’t, then things will generally go pretty well. He may not win any employee of the month awards, but he’s competent enough that a minimal effort is generally sufficient to keep him out of the danger zone of bad reviews and being asked to leave and things like that. The thing is, he doesn’t see himself as an average employee, he sees himself as the best worker in the place who is just phoning it in because he has more interesting things to think about. However, while WWOOFING, he starts to kinda care. He complains about work while it’s happening, but he gives it his all, and he doesn’t avoid being assigned work. He actually takes on as much responsibility and as many tasks as their hosts are willing to offer them. He doesn’t know exactly why this change is happening, but he’s learned enough by going with the flow that he knows to never stop himself from doing something productive when it doesn’t feel like work. His priorities are slowly changing under the surface and his attitude will eventually have to catch up. ";
+var tripFour = "Trip and Cheryl continue to grow closer. They are sort of complacent about their buddy Max because A. He seems to be having a good time, and B. They’re having the time of their lives, and it’s not easy to be super empathetic when your own life is going super well. Max feels the subtle signs of this dynamic, but it comes to a head with the Shawn situation. Trip and Cheryl are super excited for him, but part of their excitement is a kind of erasure. If Max has a really exciting and satisfying love affair it absolves them of whatever small amount of guilt they might feel about third wheeling him so hard throughout the journey. That’s why max doesn’t appreciate their well wishes with the Shawn thing, even though it’s all coming from a very good natured place. This whole thing sets up the fight between Max and Trip where Max finally acknowledges that he’s an addict.";
+var tripFive = "Cheryl and Trip break up for reasons of mismatched priorities. Trip wants to be with Cheryl, but the longer they’re together the more his instincts are driving him to turn their relationship into the same one that he had with Susan. Of course, from Cheryl’s perspective this is the creepiest thing she could possibly see, but she’s falling in love. She likes Trip a lot, and she appreciates more about him than Max— for example. However, she can feel the sense of freedom that inspired their union dissipating as Trip tries to figure out how to own her and marvel at her at the same time. I think that Zez is actually gonna offer everyone the chance to stay on as semi permanent help since they’ve all gotten along so well. Cheryl will, quite logically, think that this will agree well with Trip. The whole reason that everyone came on the adventure was because they were so dissatisfied with the status quo, and they’ve been having the time of their lives changing the rules. Now they have a chance to make that change more serious and long lasting, it should be a no brainer, but Trip reveals that even he, the initial architect of their road adventure, is scared to give up on the traditional vision of a life. That’s the same vision that gave him a nervous breakdown in Japan. Max goes with him out of loyalty, both to Trip, and also out of the his loyalty to the habit of convention. They’re both miserable as they meet up with Jean (who very well might be Max’s cousin, not Trip’s, if I hang so much on Max not wanting to go home, I need more to establish his issues with it). Susan drops some revelation on them. I think I might include Susan in the prologue. That might add some interest when her name pops up early on in the text because she won’t get any scenes until the end. She can be hanging from the ceiling over water or something. It’s my one temporal play, so it has to be choreographed down to the last little twitch. Not only am I buying some tension, I’m also leaving an interesting roadmap for people rereading, and people who are capable of following the clues from the beginning.";
+var tripSix = "Trip is a man freed from ego. It’s been a hard won gain. He lost his cousin, and his innocence. It’s not that it’s his fault even. Not in a direct way. Cheryl is just as culpable for the environmental impact of a normal life as Trip is, so it’s not that she deserves absolution, it’s that everyone is guilty, and someone is always gonna pay for that. In Trip’s case he was forced to pay a price, and he feels a responsibility to stop acting like there’s nothing wrong with just existing and consuming. Due to this humility, and the circumstances that brought it about, the problems between him and Cheryl have disappeared. However, it’s not as simple as them just being together from then on. Part of the foundation of their breakup was how little the ownership over people model worked. Being a couple was a kind of betrayal of what they were learning was true. I don’t think that it’s necessary to be explicit about what happens to them as a couple, just that Cheryl comforts him with an intimate hug. ";
+//line 3
+
+var princOne = "1. December: Beginning: One possible way to begin the story would be with Max’s overdose. The other possible way to begin would be with Trip’s return. I could also adjust the prologue to show Trip’s neurosis and hypergraphia destroying the relationship, but otherwise I have to get rid of the prologue. Max and Trip are both introduced at the beginning. — I think that I’ll do a prologue that shows Trip and Max at the end of the story trying to survive the flood. That would allow me a lot more leeway to talk about the road adventure stuff that I’m interested in without running the risk of people feeling like the ending came out of nowhere. I should definitely experiment with that. It would actually be pretty cool if I started out with what is essentially the only “action” scene in the whole story, then immediately followed it up with Max almost dying in a cinematic overdose scene. Then the first act will be punctuated by the acid scene. The second act will be mostly just cool adventures, then Max has his Shawn experience and things get serious, then we have the two big character fights, then Trip sees Susan again, then there’s the flood. It actually kinda feels like there might be enough there to keep people interested.";
+var princTwo = "January: Cheryl and Trip meet as Trip begins working at the Sylvan. We get an assessment of where everyone’s life is at.  April: Bar with Cheryl. The main three character’s go out drinking and they vibe the most of anyone there. Trip and Cheryl are very much on the same page. Since it’s from Max’s perspective I’m actually going to give them some real chemistry. It would be harder for me to sell that from inside Trip’s head.  May: Cheryl gets onboard with the plan to go on an adventure. They make preparations, quit their jobs in dramatic fashion and get ready to hit the road. The First FewMay:  New York city, complete with Acid and all of the trappings of that scene. Trip and Cheryl hook up for the first time on the adventure.";
+var princThree = "6. May:  Amelia/Pennsylvania/Sandy: Everyone begins to learn the ropes a little bit. WWOOFING is simple, but it’s a big change. Especially for Max. He’s not a flexible person. He’s always been rewarded for staying tough and self sufficient. Opening himself up to new things and potential embarrassment doesn’t come easily to him. He gets poison ivy which is a symbol of his withdrawel maybe?";
+var princFour = "May/June: Maryland/Shawn/Des Cousins/ Tiny House: This is the meat of the story. I want it to be everybody’s favorite part. It’s where the travellers have become seasoned enough to handle the work while maintaining/finding enthusiasm for different ways of living. ";
+var princFive = " June: Illinois/ Zez/ the Flood: Everything comes to a head. Max and Trip have their big fight. Cheryl leaves Trip to work with Zez. Then Trip has his final confrontation with Susan and Jean ends up dying due to the flood. I’ll have to work out where that should be geographically. Chicago doesn’t make the most sense in the world.";
+var princSix = "June: The way I have it figured right now, the end is gonna be Trip and Max saying goodbye to RI and staying with Zez too. Maybe Max leaves on his own adventure.";
+//line 4
+var cherylOne = " Cheryl comes into the story at the restaurant. Now I actually have a couple different ways of realizing this. Max could see her at work alone before he gets Trip a job, or we could introduce her at the same time as Trip comes to the Sylvan for the first time. I’m not going to be able to imagine it fully wihtout more contemplation, but I think that Max should see her briefly first. He doesn’t need to make a fuss about her, but maybe they kinda rap to each other during a terrible shift. I like the idea that her introduction and progression in the story won’t all have to do with Trip. Having her share moments with other characters, especially female characters, will be very important. Cheryl and Trip start to bond. What I’ve got right now is this terribly incelish one sides love affair where Trip is just obsessed with Cheryl and she is kind of with him because the plot demands it. I need to fix that by making Trip a good enough character that Cheryl might actually be interested in being with him. Of course, there’s a certain uneven quality to their relationship in the long run because Cheryl has to want to break up with Trip by the time they get to Zez’s, but I want people to actually be rooting for the relationship. Max is, when you factor out all of the jealousy. I’m going to make Trip a more confident guy. The complexity can come from the paradox of confident white guys instead of coming from the trope of loser boys getting manic pixie dream girls. ";
+var cherylTwo = "New York has always been a bit difficult as far as Cheryl’s character goes. Ultimately, what happens for her is that she goes on this adventure with a couple of friends, neither of them extremely close. Their first stop is NYC. They get smashed, and Max’s dealer gets them acid. Has she ever done it before? They all do it then keep dancing. It’s from Max’s perspective, so we don’t need to see Cheryl’s visuals or anything, but maybe we can get some insight into they way her thoughts are different on the drug. For some reason she ends up hooking up with Trip. Why then? Would it have happened if they weren’t on acid? If so, why does this scene have them doing the drug? What is it supposed to do for them? I have a good idea for Max’s reasoning, but I need to uncover more significance in the acid experience for the other characters.";
+var cherylThree = "WWOOFING comes most naturally to Cheryl of all of the characters. She is the most physically active at the start of the story so it isn’t as much of an upheavel to suddenly be doing stuff all day. She has also made a hobby of studying environmental science so she has a strong sense of the importance of what they’re doing, especially because of what they’re headed for as a species. What we’re headed for. ";
+var cherylFour = "Trip and Cheryl start sleeping together every night. They’re in love, and they are both doing exactly what they want to be doing. Farming is the perfect occupation. They’re present in their bodies, aware of what they’re eating and drinking, living cleanly and having sex every night. At Shawn’s they notice Max’s relationship and their reaction to it makes it clear that they know him to be getting the short end of the paradise stick. Cheryl doesn’t feel bad for being with Trip. They’re all adults by this point, and Max is a big fan of casual sex while in Rhode Island, so she knows that he’s not being prudish about the whole thing, he’s just jealous. Out of respect for his feelings she limits their pda, which Trip is fine with, but she’s not going to go further than that to protect the glass feelings of a guy who is never that considerate with his other hookups.";
+var cherylFive = "Trip seems to feel like he has some kind of ownership over her, which is more than a red flag, it’s a relationship kill switch. Cheryl has been learning, as she thought they all were, about how fucked everything is, and the concept of the “couple” is far from blameless in the scenario. She thought that they were all beginning to understand that a change had to be made, but Trip apprently thought they were gonna move back to Rhode Island and live happily ever after. She can’t deal with this idiocy. Even though they are going to be living together after the end of the book, I’d love to write things in such a way that people can extrapolate that the two of them won’t be “together” in the sense that Trip was pushing for. Cheryl is the first of their group to grow beyond the limits that have been placed on all of their minds by society.";
+var cherylSix = "The ending for Cheryl begins a little bit earlier than for the other two. She isn’t there when the flooding starts. She has already reached a level of character development that the other two are searching for. That’s the thing that prompts the end we get. One of the members of the little adventure team has gotten the message and the other two aren’t ready. It’s scarier because they’re so close to getting onboard, so it seems all the more real. ";
+
+
+
+     
+//The draw function shows a different full screen of text depending on mouseX and mouseY being within a specific one of the 24 buttons. If it's not in any of them and also pressed, the final else if requires that we see the main screen
+
+   
+draw = function() {
+    
+     if (mousePressed && mouseX > canvasSize * 8/400 && mouseX < canvasSize * 58/400 && mouseY > canvasSize * 25/400 && mouseY < canvasSize * 75/400){
+         fill(194, 181, 144);
+         rect(0, 0, canvasSize, canvasSize);
+         fill(23, 186, 159);
+         text(maxOne, 0, 0, canvasSize, canvasSize);
+
+     } else if (mousePressed && mouseX > canvasSize * 68/400 && mouseX < canvasSize * 125/400 && mouseY > canvasSize * 25/400 && mouseY < canvasSize * 75/400){
+         fill(194, 181, 144);
+         rect(0, 0, canvasSize, canvasSize);
+         fill(23, 186, 159);
+         text(maxTwo, 0, 0, canvasSize, canvasSize);
+         
+     }else if (mousePressed && mouseX > canvasSize * 142/400 && mouseX < canvasSize * 192/400 && mouseY > canvasSize * 25/400 && mouseY < canvasSize * 75/400){
+         fill(194, 181, 144);
+         rect(0, 0, canvasSize, canvasSize);
+         fill(23, 186, 159);
+         text(maxThree, 0, 0, canvasSize, canvasSize);
+         
+     }else if (mousePressed && mouseX > canvasSize * 209/400 && mouseX < canvasSize * 259/400 && mouseY > canvasSize * 25/400 && mouseY < canvasSize * 75/400){
+         fill(194, 181, 144);
+         rect(0, 0, canvasSize, canvasSize);
+         fill(23, 186, 159);
+         text(maxFour, 0, 0, canvasSize, canvasSize);
+         
+     }else if (mousePressed && mouseX > canvasSize * 276/400 && mouseX < canvasSize * 326/400 && mouseY > canvasSize * 25/400 && mouseY < canvasSize * 75/400){
+         fill(194, 181, 144);
+         rect(0, 0, canvasSize, canvasSize);
+         fill(23, 186, 159);
+         text(maxFive, 0, 0, canvasSize, canvasSize);
+         
+     }else if (mousePressed && mouseX > canvasSize * 343/400 && mouseX < canvasSize * 393/400 && mouseY > canvasSize * 25/400 && mouseY < canvasSize * 75/400){
+         fill(194, 181, 144);
+         rect(0, 0, canvasSize, canvasSize);
+         fill(23, 186, 159);
+         text(maxSix, 0, 0, canvasSize, canvasSize);
+         //Trip
+         
+     }else if (mousePressed && mouseX > canvasSize * 8/400 && mouseX < canvasSize * 58/400 && mouseY > canvasSize * 125/400 && mouseY < canvasSize * 175/400){
+         fill(194, 181, 144);
+         rect(0, 0, canvasSize, canvasSize);
+         fill(23, 186, 159);
+         text(tripOne, 0, 0, canvasSize, canvasSize);
+         
+     }else if (mousePressed && mouseX > canvasSize * 68/400 && mouseX < canvasSize * 125/400 && mouseY > canvasSize * 125/400 && mouseY < canvasSize * 175/400){
+         fill(194, 181, 144);
+         rect(0, 0, canvasSize, canvasSize);
+         fill(23, 186, 159);
+         text(tripTwo, 0, 0, canvasSize, canvasSize);
+         
+     }else if (mousePressed && mouseX > canvasSize * 142/400 && mouseX < canvasSize * 192/400 && mouseY > canvasSize * 125/400 && mouseY < canvasSize * 175/400){
+         fill(194, 181, 144);
+         rect(0, 0, canvasSize, canvasSize);
+         fill(23, 186, 159);
+         text(tripThree, 0, 0, canvasSize, canvasSize);
+         
+     }else if (mousePressed && mouseX > canvasSize * 209/400 && mouseX < canvasSize * 259/400 && mouseY > canvasSize * 125/400 && mouseY < canvasSize * 175/400){
+         fill(194, 181, 144);
+         rect(0, 0, canvasSize, canvasSize);
+         fill(23, 186, 159);
+         text(tripFour, 0, 0, canvasSize, canvasSize);
+         
+     }else if (mousePressed && mouseX > canvasSize * 276/400 && mouseX < canvasSize * 326/400 && mouseY > canvasSize * 125/400 && mouseY < canvasSize * 175/400){
+         fill(194, 181, 144);
+         rect(0, 0, canvasSize, canvasSize);
+         fill(23, 186, 159);
+         text(tripFive, 0, 0, canvasSize, canvasSize);
+         
+     }else if (mousePressed && mouseX > canvasSize * 343/400 && mouseX < canvasSize * 393/400 && mouseY > canvasSize * 125/400 && mouseY < canvasSize * 175/400){
+         fill(194, 181, 144);
+         rect(0, 0, canvasSize, canvasSize);
+         fill(23, 186, 159);
+         text(tripSix, 0, 0, canvasSize, canvasSize);
+         
+     }
+     //Principle Line
+     else if (mousePressed && mouseX > canvasSize * 8/400 && mouseX < canvasSize * 58/400 && mouseY > canvasSize * 225/400 && mouseY < canvasSize * 275/400){
+         fill(194, 181, 144);
+         rect(0, 0, canvasSize, canvasSize);
+         fill(23, 186, 159);
+         text(princOne, 0, 0, canvasSize, canvasSize);
+         
+     }else if (mousePressed && mouseX > canvasSize * 68/400 && mouseX < canvasSize * 125/400 && mouseY > canvasSize * 225/400 && mouseY < canvasSize * 275/400){
+         fill(194, 181, 144);
+         rect(0, 0, canvasSize, canvasSize);
+         fill(23, 186, 159);
+         text(princTwo, 0, 0, canvasSize, canvasSize);
+         
+     }else if (mousePressed && mouseX > canvasSize * 142/400 && mouseX < canvasSize * 192/400 && mouseY > canvasSize * 225/400 && mouseY < canvasSize * 275/400){
+         fill(194, 181, 144);
+         rect(0, 0, canvasSize, canvasSize);
+         fill(23, 186, 159);
+         text(princThree, 0, 0, canvasSize, canvasSize);
+         
+     }else if (mousePressed && mouseX > canvasSize * 209/400 && mouseX < canvasSize * 259/400 && mouseY > canvasSize * 225/400 && mouseY < canvasSize * 275/400){
+         fill(194, 181, 144);
+         rect(0, 0, canvasSize, canvasSize);
+         fill(23, 186, 159);
+         text(princFour, 0, 0, canvasSize, canvasSize);
+         
+     }else if (mousePressed && mouseX > canvasSize * 276/400 && mouseX < canvasSize * 326/400 && mouseY > canvasSize * 225/400 && mouseY < canvasSize * 275/400){
+         fill(194, 181, 144);
+         rect(0, 0, canvasSize, canvasSize);
+         fill(23, 186, 159);
+         text(princFive, 0, 0, canvasSize, canvasSize);
+         
+     }else if (mousePressed && mouseX > canvasSize * 343/400 && mouseX < canvasSize * 393/400 && mouseY > canvasSize * 225/400 && mouseY < canvasSize * 275/400){
+         fill(194, 181, 144);
+         rect(0, 0, canvasSize, canvasSize);
+         fill(23, 186, 159);
+         text(princSix, 0, 0, canvasSize, canvasSize);
+         
+     }
+     //Cheryl Line
+     else if (mousePressed && mouseX > canvasSize * 8/400 && mouseX < canvasSize * 58/400 && mouseY > canvasSize * 325/400 && mouseY < canvasSize * 375/400){
+         fill(194, 181, 144);
+         rect(0, 0, canvasSize, canvasSize);
+         fill(23, 186, 159);
+         text(cherylOne, 0, 0, canvasSize, canvasSize);
+         
+     }else if (mousePressed && mouseX > canvasSize * 68/400 && mouseX < canvasSize * 125/400 && mouseY > canvasSize * 325/400 && mouseY < canvasSize * 375/400){
+         fill(194, 181, 144);
+         rect(0, 0, canvasSize, canvasSize);
+         fill(23, 186, 159);
+         text(cherylTwo, 0, 0, canvasSize, canvasSize);
+         
+     }else if (mousePressed && mouseX > canvasSize * 142/400 && mouseX < canvasSize * 192/400 && mouseY > canvasSize * 325/400 && mouseY < canvasSize * 375/400){
+         fill(194, 181, 144);
+         rect(0, 0, canvasSize, canvasSize);
+         fill(23, 186, 159);
+         text(cherylThree, 0, 0, canvasSize, canvasSize);
+         
+     }else if (mousePressed && mouseX > canvasSize * 209/400 && mouseX < canvasSize * 259/400 && mouseY > canvasSize * 325/400 && mouseY < canvasSize * 375/400){
+         fill(194, 181, 144);
+         rect(0, 0, canvasSize, canvasSize);
+         fill(23, 186, 159);
+         text(cherylFour, 0, 0, canvasSize, canvasSize);
+         
+     }else if (mousePressed && mouseX > canvasSize * 276/400 && mouseX < canvasSize * 326/400 && mouseY > canvasSize * 325/400 && mouseY < canvasSize * 375/400){
+         fill(194, 181, 144);
+         rect(0, 0, canvasSize, canvasSize);
+         fill(23, 186, 159);
+         text(cherylFive, 0, 0, canvasSize, canvasSize);
+         
+     }else if (mousePressed && mouseX > canvasSize * 343/400 && mouseX < canvasSize * 393/400 && mouseY > canvasSize * 325/400 && mouseY < canvasSize * 375/400){
+         fill(194, 181, 144);
+         rect(0, 0, canvasSize, canvasSize);
+         fill(23, 186, 159);
+         text(cherylSix, 0, 0, canvasSize, canvasSize);
+         
+     }
+     
+     
+     
+     
+     
+     
+     
+     
+     //The main screen
+     else if (mousePressed === false){
+         background(15, 250, 250);
+          var timeLine = function(y, character, titles){
+         this.y = y;
+         this.titles = titles;
+         this.character = character;
+         text(character, canvasSize * 195/400, y-30);
+         line(0, y, canvasSize, y);
+            for (var i = 0; i < 6; i++){
+                fill(15*y/8, 15*y/16, 15*y/5);
+                 rect(canvasSize * 8/400 +i* canvasSize *66.7 / 400, y-canvasSize * 25/400, canvasSize/8 , canvasSize / 8);
+                //Prints the titles
+                fill(0, 0, 0);
+                text(titles[i], (canvasSize * 10/400 + canvasSize * 67/400 * i), y);
+         }
+         
+
+
+     };
+     
+     timeLine(50, "Max", ["Scene 1", "Scene 2", "Scene 3", "Scene 4","Scene 5", "Scene 6"]);
+     timeLine(150, "Trip", ["Scene 1", "Scene 2", "Scene 3", "Scene 4","Scene 5", "Scene 6"]);
+     timeLine(250, "Principle", ["Start", "Aventure", "First", "Best","Flood", "End"]);
+     timeLine(350, "Cheryl", ["Scene 1", "Scene 2", "Scene 3", "Scene 4","Scene 5", "Scene 6"]);
+     
+     
+     
+
+
+
+     }
+};
+
+   
  
  <script>
     var sketchProc = function(processingInstance) {
