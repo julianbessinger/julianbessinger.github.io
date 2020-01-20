@@ -9,33 +9,96 @@
 
   <style>
     body {
-        background-color: rgb(255,204,255);
+        background-color: rgb(255,255,255);
+    }
+    ul {
+        list-style: none;
+    }
+    .topnav {
+        overflow: hidden;
+        background-color: black;
+    }
+    .topnav a {
+  float: left;
+  display: block;
+  color: cornsilk;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+    }
+    .topnav a:hover {
+        color: black;
+        background-color: cornsilk;
     }
     h1 {
-        color: blanchedalmond;
+        color: rgb(37, 23, 1);
+        text-align: center;
     }
+    #infotable {
+        float: right;
+        width: 60%;
+        padding: 10px 10px;
+    }
+    #leftcolumn {
+        width: 20%;
+        float:left;
+        padding: 10px 10px;
+        border:1px solid black;
+    }
+    
     table, th, td {
-        border:2px solid red ;
+        border:2px solid rgb(228, 219, 219) ;
     }
+    #leftlist {
+        width: 50%;
+    }
+    #rightlist {
+        width: 50%;
+    }
+    
+    
     #headshot {
-        height: 200px;
-        
+        width: 200px;
+       
+    }
+
+    }
+    #biotext {
+       
+    }
+    footer {
+        text-align: center;
+        padding-top: 95%;
     }
     </style>
 </head>
 
 
-// Commit daily to Github. Host the website there.
 
 <body>
+    <header></header>
+    <h1>Julian Bessinger Online Resume</h1>
+    <nav class="topnav">
+        <a href="aboutMe.html">About Me</a>
+        <a href="resume.html">Resume</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact Me</a>
+    </nav>
+    
 
-  <h1>Julian Bessinger Online Resume</h1>
-  <img  src="images/headshot.jpg", id="headshot">
-  <h2>About Me</h2>
-  <div>
-      <a href="Julian Bessinger Resume 2020.docx" download>Download Resume</a>
+    <div id="leftcolumn">
+    <a id="resdown" href="Julian Bessinger Resume 2020.docx" download>Download Resume</a>
+  
+      <img  src="images/headshot.jpg", id="headshot">
+ 
+      
+
+      <p id="biotext">Julian Bessinger is an English as a Foreign Language teacher in Clermont-Ferrand, France.</p>
   </div>
-  <table style="width:100%">
+
+  <div id="infotable" >
+        <h2>About Me</h2>
+  <table>
       <tr>
           <th>Name</th>
           <th>Location</th>
@@ -51,6 +114,19 @@
           <td>jb5103@nyu.edu</td>
       </tr>
   </table>
+<div id="rightlist">
+  <ul>
+      <li><strong>Name:</strong> Julian Bessinger</li>
+      <li><strong>Location:</strong> Clermont-Ferrand, France, 63100</li>
+      <li><strong>Degree: </strong>B.A. English, NYU, 2018</li>
+      <li><strong>Phone:</strong> 1 401-324-9835</li>
+      <li><strong>Email:</strong> jb5103@nyu.edu</li>
+  </ul>
+</div>
+</div>
+  <footer>
+      <p>Copyright Julian Bessinger, 2020</p>
+  </footer>
 
 
 
