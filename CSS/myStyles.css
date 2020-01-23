@@ -13,7 +13,7 @@ float: left;
 display: block;
 color: cornsilk;
 text-align: center;
-padding: 10px 10px;
+padding: 10px 10px 10px 10px;
 text-decoration: none;
 }
 .topnav a:hover {
@@ -21,8 +21,9 @@ text-decoration: none;
     background-color: cornsilk;
 }
 h1 {
-    color: rgb(37, 23, 1);
+    color: cornsilk;
     text-align: center;
+    background-color: black;
 }
 #infotable {
     float: right;
@@ -34,14 +35,24 @@ h1 {
     width: 20%;
     float:left;
     padding: 10px 10px;
-    border:1px solid black;
+    border:2px solid black;
+    border-radius: 4px;
+}
+#resdown {
+    text-decoration: none;
+    background-color: black;
+    color: cornsilk;
+    border: 1px black;
+    border-radius: 4px;
 }
 
 table, th, td {
     border:2px solid rgb(228, 219, 219) ;
     padding: 10px 10px;
     margin: 10px auto ;
-    background-color: gray;
+    color:black;
+    border-radius: 4px;
+    
 }
 #leftlist {
     width: 50%;
