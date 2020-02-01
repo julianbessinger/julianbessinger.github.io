@@ -108,6 +108,11 @@ table, th, td {
     border-radius: 4px;
    
 }
-
+#contactform, input {
+    width: 200px;
+}
+#contactform, textarea {
+    width: 400px;
+    height: 400px;
 }
 
