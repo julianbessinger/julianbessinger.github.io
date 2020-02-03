@@ -19,17 +19,27 @@
             <a href="contact.html">Contact Me</a>
         </nav>
 <br>
-<div id="formDiv">
-        <form id="contactform">
-            <input type = "text" placeholder="Enter your name" id="Name">
-            <br>
-            <input type="email" placeholder="Enter your email" id="Email">
-            <br>
-            <textarea id="Text" rows="4"></textarea>
-            <br>
-            <button id="submitButton">Submit</button>
-        </form>
-    </div>
+
+
+
+
+<form id="contactform"
+action="https://formspree.io/xknrrwrj"
+method="POST"
+>
+<label>
+  Your email:
+  <input type="text" placeholder="Enter your email"_replyto">
+</label>
+<label>
+  Your message:
+  <textarea placeholder="Enter your name" name="message"></textarea>
+</label>
+
+<!-- your other form fields go here -->
+
+<button type="submit">Send</button>
+</form>
         <script src="js/scripts.js"></script>
     </body>
 </html>
