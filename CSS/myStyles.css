@@ -108,11 +108,18 @@ table, th, td {
     border-radius: 4px;
    
 }
+#contactDiv {
+    display: inline-block;
+    text-align: center;
+}
+
 #contactform, input {
     width: 200px;
+    color: cornsilk;
 }
 #contactform, textarea {
     width: 400px;
     height: 400px;
+    color: cornsilk;
 }
 
