@@ -122,4 +122,16 @@ table, th, td {
     height: 400px;
     color: cornsilk;
 }
+.gallery {
+    margin: 10px 50px;
+}
+.gallery img {
+    transition: 1s;
+    padding: 15px;
+    width: 200px;
+}
+.gallery img:hover {
+    filter: grayscale(75%);
+    transform: scale(1.05);
 
+}
