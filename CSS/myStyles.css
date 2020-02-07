@@ -1,7 +1,7 @@
 body {
-    background-image: linear-gradient(to right, #302B27, #302B27 25%, white 75%);
+   /* background-image: linear-gradient(to right, #302B27, #302B27 25%, white 75%);
     background-attachment: fixed;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     font-family: Arial, Helvetica, sans-serif;
 }
 ul {
@@ -14,19 +14,19 @@ ul {
 .topnav a {
 float: left;
 display: block;
-color: cornsilk;
+color: white;
 text-align: center;
 padding: 10px 10px 10px 10px;
 text-decoration: none;
 }
 .topnav a:hover {
-    color: #141E09;
-    background-color: cornsilk;
+    color: white;
+    background-color: black;
 }
 h1 {
-    color: cornsilk;
+    color: black;
     text-align: center;
-    background-color: black;
+   
 }
 h2 {
     
@@ -66,7 +66,7 @@ footer {
 	border:1px solid #000000;
 	display:inline-block;
 	cursor:pointer;
-	color:cornsilk;
+	color:white;
 	font-family:Arial;
 	font-size:15px;
 	font-weight:bold;
@@ -97,7 +97,7 @@ table, th, td {
     width: 50%;
 }
 #rightlist {
-    color: cornsilk;
+    color: white;
     width: 50%;
     text-align;: right;
 }
@@ -115,12 +115,12 @@ table, th, td {
 
 #contactform, input {
     width: 200px;
-    color: cornsilk;
+    color: black;
 }
 #contactform, textarea {
     width: 400px;
     height: 400px;
-    color: cornsilk;
+    color: black;
 }
 .gallery {
     margin: 10px 50px;
@@ -137,5 +137,5 @@ table, th, td {
 }
 .gallery, figure {
       display: inline-block;
-      color: cornsilk;
+      color: black;
 }
