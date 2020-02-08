@@ -20,8 +20,8 @@ padding: 10px 10px 10px 10px;
 text-decoration: none;
 }
 .topnav a:hover {
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: white;
 }
 h1 {
     color: black;
@@ -44,8 +44,7 @@ h5 {
 .lorem {
     float: right;
     width: 60%;
-    border: 2px ridge black;
-    border-radius: 4px;
+    
 }
 
 footer {
