@@ -1,8 +1,10 @@
+
 body {
    /* background-image: linear-gradient(to right, #302B27, #302B27 25%, white 75%);
     background-attachment: fixed;
     background-repeat: no-repeat; */
     font-family: Arapey,serif;
+    color: grey;
 }
 ul {
     list-style: none;
@@ -17,7 +19,6 @@ ul {
 .topnav a, h1 {
 
 display: block;
-color: black;
 text-align: center;
 padding: 20px 50px 20px 20px;
 text-decoration: none;
@@ -30,7 +31,6 @@ display:inline-block;
     display:inline-block;
 }
 h1 {
-    color: black;
     text-align: center;
    
 }
@@ -39,6 +39,13 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   width: 10%;
+}
+.bottomDash {
+    display: block;
+    margin-left: 45%;
+    margin-right: auto%;
+    padding-top: 42%;
+    width: 10%;
 }
 h2 {
     
@@ -61,7 +68,7 @@ h5 {
 
 footer {
     text-align: center;
-    padding-top: 95%;
+    padding-top: 75%;
 }
 
 #leftcolumn {
@@ -100,7 +107,6 @@ table, th, td {
     border:2px solid rgb(228, 219, 219) ;
     padding: 10px 10px;
     margin: 10px auto ;
-    color:#141E09;
     border-radius: 4px;
     
 }
@@ -127,12 +133,12 @@ table, th, td {
 
 #contactform, input {
     width: 200px;
-    color: black;
+  
 }
 #contactform, textarea {
     width: 400px;
     height: 400px;
-    color: black;
+   
 }
 .gallery {
     margin: 10px 50px;
@@ -149,5 +155,5 @@ table, th, td {
 }
 .gallery, figure {
       display: inline-block;
-      color: black;
+    
 }
