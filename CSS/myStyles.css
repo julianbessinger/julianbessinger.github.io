@@ -4,7 +4,7 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat; */
     font-family: Arapey,serif;
-    color: grey;
+    color: #313131;
 }
 ul {
     list-style: none;
@@ -20,9 +20,10 @@ ul {
 
 display: block;
 text-align: center;
-padding: 20px 50px 20px 20px;
+padding: 20px 70px 20px 20px;
 text-decoration: none;
 display:inline-block;
+color: #313131;
 
 }
 .topnav a:hover {
@@ -40,13 +41,7 @@ h1 {
   margin-right: auto;
   width: 10%;
 }
-.bottomDash {
-    display: block;
-    margin-left: 45%;
-    margin-right: auto%;
-    padding-top: 42%;
-    width: 10%;
-}
+
 h2 {
     
     text-align: center;
@@ -64,6 +59,14 @@ h5 {
     float: right;
     width: 60%;
     
+}
+#blurbOne {
+    float: right;
+    width: 30%;
+}
+#blurbTwo {
+    float: right;
+    width: 30%;
 }
 
 footer {
