@@ -28,9 +28,9 @@ padding-top: 15%;
 
 }
 .topnav a:hover {
-    color: white;
+   /* color: white;
     background-color: black;
-    display:inline-block;
+    */
 }
 h1 {
     text-align: center;
@@ -136,7 +136,9 @@ table, th, td {
 }
 #contactDiv {
     display: inline-block;
-    text-align: center;
+    text-align: left;
+    align-content: left;
+    width: 50%;
 }
 
 #contactform, input {
@@ -147,6 +149,12 @@ table, th, td {
     width: 400px;
     height: 400px;
    
+}
+#contactText {
+    display: inline-block;
+    text-align: right;
+    align-content: right;
+    width: 40%;
 }
 .gallery {
     margin: 10px 50px;
