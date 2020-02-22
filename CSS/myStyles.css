@@ -26,7 +26,7 @@ padding: 20px 80px 20px 80px;
 text-decoration: none;
 display:inline-block;
 color: #313131;
-padding-top: 9%;
+padding-top: 9.9%;
 
 }
 .topnav a:hover {
@@ -139,8 +139,8 @@ table, th, td {
 }
 #contactDiv {
     display: inline-block;
-    text-align: left;
-    align-content: left;
+    text-align: center;
+    align-content: center;
     width: 50%;
 }
 
@@ -175,4 +175,13 @@ table, th, td {
 .gallery, figure {
       display: inline-block;
     
+}
+.LI-profile-badge {
+    text-align: left;
+    width: 30%;
+    display: inline-block;
+    
+}
+#resdown {
+    text-align: right;
 }
