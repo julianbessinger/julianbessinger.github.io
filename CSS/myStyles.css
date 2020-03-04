@@ -16,7 +16,7 @@ ul {
     font-family: sans-serif;
    
 }
-.topnav a, h1 {
+.topnav h1 {
 
 display: block;
 text-align: center;
@@ -29,6 +29,18 @@ color: #313131;
 padding-top: 9.9%;
 
 }
+.linx {
+    display: block;
+text-align: center;
+padding: 20px 80px 20px 80px;
+
+
+text-decoration: none;
+display:inline-block;
+color: #313131;
+padding-top: 9.9%;
+}
+
 .topnav a:hover {
    color: white;
     background-color: black;
@@ -127,7 +139,7 @@ table, th, td {
 #rightlist {
     color: white;
     width: 50%;
-    text-align;: right;
+    text-align: right;
 }
 
 
