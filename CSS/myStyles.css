@@ -41,11 +41,11 @@ color: #313131;
 padding-top: 9.9%;
 }
 
-.topnav a:hover {
+/*.topnav a:hover {
    color: white;
     background-color: black;
 
-}
+}*/
 h1 {
     text-align: center;
    
@@ -196,4 +196,10 @@ table, th, td {
 }
 #resdown {
     text-align: right;
+   display: inline-block;
+}
+#surLaTable {
+    
+    text-align: right;
+    display: inline-block;
 }
