@@ -5,6 +5,7 @@ body {
     background-repeat: no-repeat; */
     font-family: Arapey,serif;
     color: #313131;
+    background-color: #BAC6F1;
 }
 ul {
     list-style: none;
@@ -41,11 +42,14 @@ color: #313131;
 padding-top: 9.9%;
 }
 
-/*.topnav a:hover {
+.topnav a:hover {
    color: white;
-    background-color: black;
+   background-image: linear-gradient(to bottom, #708AE8, #708AE8 25%, white 75%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+   
 
-}*/
+}
 h1 {
     text-align: center;
    
