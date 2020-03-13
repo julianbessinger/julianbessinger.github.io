@@ -103,10 +103,10 @@ footer {
 }
 .myButton {
 	box-shadow:inset 0px 1px 3px 0px #91b8b3;
-	background:linear-gradient(to bottom, #000000 5%, #6c7c7c 100%);
-	background-color:#000000;
+	background:linear-gradient(to bottom, #42D9C8 5%, #6c7c7c 100%);
+	background-color:#42D9C8;
 	border-radius:5px;
-	border:1px solid #000000;
+	border:1px solid #42D9C8;
 	display:inline-block;
 	cursor:pointer;
 	color:white;
