@@ -10,6 +10,9 @@ body {
 ul {
     list-style: none;
 }
+#landingImg {
+    
+}
 .topnav {
     overflow: hidden;
 
@@ -102,11 +105,11 @@ footer {
     padding: 10px 10px;
 }
 .myButton {
-	box-shadow:inset 0px 1px 3px 0px #91b8b3;
-	background:linear-gradient(to bottom, #42D9C8 5%, #6c7c7c 100%);
-	background-color:#42D9C8;
+	box-shadow:inset 0px 1px 3px 0px #708AE8;
+	background:linear-gradient(to bottom, #708AE8 5%, #6c7c7c 100%);
+	background-color:#708AE8;
 	border-radius:5px;
-	border:1px solid #42D9C8;
+	border:1px solid #708AE8;
 	display:inline-block;
 	cursor:pointer;
 	color:white;
