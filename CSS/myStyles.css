@@ -11,7 +11,8 @@ ul {
     list-style: none;
 }
 #landingImg {
-    
+    max-width: 99%;
+  max-height: 99%;
 }
 .topnav {
     overflow: hidden;
