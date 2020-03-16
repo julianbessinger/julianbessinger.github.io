@@ -1,28 +1,211 @@
-/* CSS Comment */
 
-body{
-	background-color:black;
+body {
+   /* background-image: linear-gradient(to right, #302B27, #302B27 25%, white 75%);
+    background-attachment: fixed;
+    background-repeat: no-repeat; */
+    font-family: Arapey,serif;
+    color: #708AE8;
+    /*background-color: #BAC6F1;*/
+}
+ul {
+    list-style: none;
+}
+#landingImg {
+    max-width: 99%;
+  max-height: 99%;
+}
+.topnav {
+    overflow: hidden;
+
+    display:inline-block;
+    font-family: sans-serif;
+   
+}
+.topnav h1 {
+
+display: block;
+text-align: center;
+padding: 20px 80px 20px 80px;
+
+
+text-decoration: none;
+display:inline-block;
+color: #313131;
+padding-top: 9.9%;
+
+}
+.linx {
+    display: block;
+text-align: center;
+padding: 20px 80px 20px 80px;
+
+
+text-decoration: none;
+display:inline-block;
+color: #313131;
+padding-top: 9.9%;
 }
 
-h1{
+.topnav a:hover {
+   color: white;
+    background-color: #708AE8;
+
+}
+h1 {
+    text-align: center;
+   
+}
+.dash {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+  text-align: center;
+}
+
+h2 {
+    
+    text-align: center;
+    
+}
+h5 {
+    text-align: center;
+}
+#infotable {
+    float: right;
+    width: 60%;
+  
+}
+.lorem {
+    float: right;
+    width: 60%;
+    
+}
+#logo {
+ 
+    height: 150px;
+    float: left;
+}
+#blurbOne {
+    float: right;
+    width: 30%;
+}
+#blurbTwo {
+    float: right;
+    width: 30%;
+}
+
+footer {
+    text-align: center;
+    padding-top: 75%;
+}
+
+#leftcolumn {
+    width: 20%;
+    float:left;
+    padding: 10px 10px;
+}
+.myButton {
+	box-shadow:inset 0px 1px 3px 0px #708AE8;
+	background:linear-gradient(to bottom, #708AE8 5%, #6c7c7c 100%);
+	background-color:#708AE8;
+	border-radius:5px;
+	border:1px solid #708AE8;
+	display:inline-block;
+	cursor:pointer;
 	color:white;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:11px 23px;
+	text-decoration:none;
+    text-shadow:0px -1px 0px #2b665e;
+    
 }
-p{
-	color:white;
+.myButton:hover {
+	background:linear-gradient(to bottom, #6f6c7c 5%, #768d87 100%);
+	background-color:#6c7c7c;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
 }
 
-hr{
-	border-color: #fff;
+
+table, th, td {
+    border:2px solid rgb(228, 219, 219) ;
+    padding: 10px 10px;
+    margin: 10px auto ;
+    border-radius: 4px;
+    
+}
+#leftlist {
+    width: 50%;
+}
+#rightlist {
+    color: white;
+    width: 50%;
+    text-align: right;
 }
 
-.subParagraphs{
-	color:green;
-	font-size: 18pt;
-	font-family: arial;
+
+#headshot {
+    padding: 50px 10px 10px 10px;
+    width: 175%;
+    border-radius: 4px;
+   
+}
+#contactDiv {
+    display: inline-block;
+    text-align: center;
+    align-content: center;
+    width: 50%;
 }
 
-#redBox{
-	width: 100px;
-	height: 100px;
-	background-color: red;
+#contactform, input {
+    width: 200px;
+  
+}
+#contactform, textarea {
+    width: 400px;
+    height: 400px;
+   
+}
+#contactText {
+    display: inline-block;
+    text-align: center;
+    align-content: right;
+    width: 100%;
+}
+.gallery {
+    margin: 10px 50px;
+}
+.gallery img {
+    transition: 1s;
+    padding: 15px;
+    width: 200px;
+}
+.gallery img:hover {
+    filter: grayscale(75%);
+    transform: scale(1.05);
+
+}
+.gallery, figure {
+      display: inline-block;
+    
+}
+.LI-profile-badge {
+    text-align: left;
+    width: 30%;
+    display: inline-block;
+    
+}
+#resdown {
+    text-align: right;
+   display: inline-block;
+}
+#surLaTable {
+    
+    text-align: right;
+    display: inline-block;
 }
