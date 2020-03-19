@@ -216,3 +216,6 @@ table, th, td {
 #sendButton{
     color: #708AE8;
 }
+#landingText {
+    text-align: center;
+}
